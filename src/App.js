@@ -1,23 +1,29 @@
-import logo from './logo.svg';
-import './App.css';
+import Header from "./components/Header";
+import Navigation from "./components/Navigation";
+import Slider from "./components/Slider";
+import TheLeadingRealEstate from "./components/TheLeadingRealEstate";
+import Counters from "./components/Counters";
+import TodaySellProperties from "./components/TodaySellProperties";
+import Cards from "./components/Cards";
+import FeaturedListing from "./components/FeaturedListing";
+import ApartmentsPlan from "./components/ApartmentsPlan";
+import Portals from "./components/Portals";
+import BuildingAminities from "./components/BuildingAminities";
+import ClientsFeeback from "./components/ClientsFeeback";
+import LatestNews from "./components/LatestNews";
+import Footer from "./components/Footer";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <Header />
+      <Navigation />
+      <Slider/>
+      <TheLeadingRealEstate />
+      <Counters/>
+      <TodaySellProperties/>
+      <Cards />
+      <FeaturedListing/>
     </div>
   );
 }
