@@ -36,13 +36,13 @@ export default function TodaySellProperties() {
       {sellProperties.map((items, index) => (
         <div key={index} className="flex justify-center mt-20">
           <div className="w-1/3">
-            <button className="bg-orange-100 p-2 w-40 rounded-full  text-red-900 mb-5">
+            <button className="bg-orange-100 p-2 w-40 rounded-full  text-red-900 mb-4">
               About Us
             </button>
             <div className="text-3xl font-bold tracking-tight  text-gray-900 sm:text-4xl">
               {items.text1}
             </div>
-            <div className="text-slate-600 w-[560px] mt-5">{items.text2}</div>
+            <div className="text-slate-600 w-[560px] ">{items.text2}</div>
             {/* live music div */}
             <div className="mt-5 mb-10  text-slate-600 p-2">
               <div className="m-2">---{items.text3}</div>

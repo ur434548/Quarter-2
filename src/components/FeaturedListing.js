@@ -5,7 +5,7 @@ import "slick-carousel/slick/slick-theme.css";
 import House2 from "../pics/House2.jpg";
 import House3 from "../pics/House3.jpg";
 import House4 from "../pics/House4.jpg";
-import House5 from "../pics/House5.jpg";
+
 import House6 from "../pics/House6.jpg";
 import House7 from "../pics/House7.jpg";
 import person from "../pics/person.jpg";
@@ -16,9 +16,6 @@ import { FaRegSquare } from "react-icons/fa";
 
 export default function FeaturedListing() {
   const DUMMY_EXPENSES = [
-    {
-      heading: "Featured Listing",
-    },
     {
       id: "e1",
       img: House2,
@@ -120,58 +117,62 @@ export default function FeaturedListing() {
   };
 
   return (
-    <div className="w-full overflow-hidden bg-slate-200 h-[800px]">
-      <div className="w-[1690px] mx-auto mt-20">
+    <div className="w-full">
+      <div className="w-[1690px] mx-auto mt-15">
+        <div className="flex flex-col items-center mx-auto my-10">
+          <button className="bg-orange-100 p-2 w-40 rounded-full text-center text-red-900 mb-4">
+            About Us
+          </button>
+          <h1 className="text-3xl font-bold tracking-tight mb-3 text-center text-gray-900 sm:text-5xl">
+            Featured Listing
+          </h1>
+        </div>
+
         <Slider {...settings}>
-          {DUMMY_EXPENSES.map((items) => (
-            <div key={items.id} className="p-4">
-            
-              <div className="w-[400px] h-[600px] bg-white  shadow-3xl flex flex-col ">
-                <div className="w-[400px]">
-                  <img src={items.img} alt={items.title} className="w-full" />
-                </div>
-                <div className="m-3 p-6">
-                  <div className="text-xl text-orange-700 font-bold">
-                    {items.price}
-                  </div>
-                  <div className="text-lg font-bold">{items.title}</div>
-                  <div className="text-base text-gray-600">
-                    {items.description}
-                  </div>
-                </div>
-                <div className="flex gap-3 w-[300px] mt-[-13px] pl-8 text-slate-600 cursor-pointer">
-                  <div className="flex flex-col">
-                    <MdOutlineBedroomChild />
-                    <span>{items.text1}</span>
-                  </div>
-                  <div className="flex flex-col">
-                    <MdOutlineBathroom />
-                    <span>{items.text2}</span>
-                  </div>
-                  <div className="flex flex-col">
-                    <IoCarSportOutline />
-                    <span>{items.text3}</span>
-                  </div>
-                  <div className="flex flex-col">
-                    <FaRegSquare />
-                    <span>{items.text4}</span>
-                  </div>
-                </div>
-                <div className="flex pl-8 ">
-                  <img
-                    className="w-[40px] h-[40px]  rounded-full mr-4"
-                    src={items.img2}
-                    alt={items.name}
-                  />
-                  <div>
-                    <div className="font-bold">{items.name}</div>
-                    <div className="text-gray-600">{items.text5}</div>
-                  </div>
-                </div>
+      {DUMMY_EXPENSES.map((items) => (
+        <div key={items.id} className="p-2">
+          <div className="w-[400px] h-[600px]  rounded-lg overflow-hidden shadow-2xl flex flex-col">
+            <div className="w-full">
+              <img src={items.img} alt={items.title} className="w-full h-[250px] object-cover" />
+            </div>
+            <div className="m-3 p-6">
+              <div className="text-xl text-orange-700 font-bold">{items.price}</div>
+              <div className="text-lg font-bold">{items.title}</div>
+              <div className="text-base text-gray-600">{items.description}</div>
+            </div>
+            <div className="flex gap-3 w-full mt-2 pl-8 text-slate-600 cursor-pointer">
+              <div className="flex flex-col items-center">
+                <MdOutlineBedroomChild />
+                <span>{items.text1}</span>
+              </div>
+              <div className="flex flex-col items-center">
+                <MdOutlineBathroom />
+                <span>{items.text2}</span>
+              </div>
+              <div className="flex flex-col items-center">
+                <IoCarSportOutline />
+                <span>{items.text3}</span>
+              </div>
+              <div className="flex flex-col items-center">
+                <FaRegSquare />
+                <span>{items.text4}</span>
               </div>
             </div>
-          ))}
-        </Slider>
+            <div className="flex pl-8 items-center">
+              <img
+                className="w-[40px] h-[40px] rounded-full mr-4"
+                src={items.img2}
+                alt={items.name}
+              />
+              <div>
+                <div className="font-bold">{items.name}</div>
+                <div className="text-gray-600">{items.text5}</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      ))}
+    </Slider>
       </div>
     </div>
   );

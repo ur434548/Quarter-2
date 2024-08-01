@@ -12,7 +12,7 @@ import BuildingAminities from "./components/BuildingAminities";
 import ClientsFeeback from "./components/ClientsFeeback";
 import LatestNews from "./components/LatestNews";
 import Footer from "./components/Footer";
-
+import "./App.css";
 function App() {
   return (
     <div>
@@ -24,6 +24,8 @@ function App() {
       <TodaySellProperties/>
       <Cards />
       <FeaturedListing/>
+      <ApartmentsPlan/>
+      <Portals/>
     </div>
   );
 }
