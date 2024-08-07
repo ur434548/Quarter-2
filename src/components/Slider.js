@@ -8,14 +8,16 @@ import House4 from "../pics/House4.jpg";
 import House5 from "../pics/House5.jpg";
 import House6 from "../pics/House6.jpg";
 import House7 from "../pics/House7.jpg";
-
+import ArrowComponent from "./ArrowComponent";
 export default function SimpleSlider() {
   var settings = {
-    dots: true,
+    
     infinite: true,
     speed: 500,
     slidesToShow: 1,
     slidesToScroll: 1,
+    nextArrow: <ArrowComponent icon=">" />,
+    prevArrow: <ArrowComponent icon="<" />,
   };
 
   return (

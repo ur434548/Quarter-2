@@ -5,11 +5,12 @@ import { FaTwitter } from "react-icons/fa";
 import { FaSquareInstagram } from "react-icons/fa6";
 import { GiCarWheel } from "react-icons/gi";
 import { FaLocationDot } from "react-icons/fa6";
+
 export default function InfoNavbar() {
   return (
     <div className="bg-cyan-950  h-auto">
-      <div className="flex justify-around  ">
-        <div className="flex justify-evenly self-center m-2 gap-2">
+      <div className="flex justify-around  content-center">
+        <div className="flex justify-evenly self-center content-center  gap-1">
           <IoIosMail size="1.2rem " className="text-orange-800" />
           <p className="font-bold text-white">Info@webGmail.com</p>
 

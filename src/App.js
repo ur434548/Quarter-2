@@ -18,14 +18,17 @@ function App() {
     <div>
       <Header />
       <Navigation />
-      <Slider/>
+      <Slider />
       <TheLeadingRealEstate />
-      <Counters/>
-      <TodaySellProperties/>
+      <Counters />
+      <TodaySellProperties />
       <Cards />
-      <FeaturedListing/>
-      <ApartmentsPlan/>
-      <Portals/>
+      <FeaturedListing />
+      <ApartmentsPlan />
+      <Portals />
+      <BuildingAminities />
+      <ClientsFeeback />
+      <LatestNews />
     </div>
   );
 }
