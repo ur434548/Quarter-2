@@ -85,27 +85,28 @@ export default function FeaturedListing() {
             Clients Feedback
           </h1>
         </div>
-
-        <Slider {...settings}>
-          {DUMMY_EXPENSES.map((items) => (
-            <div key={items.id} >
-              <div className="w-[400px] h-[350px] bg-white rounded-lg  shadow-neutral-900 p-16 ">
-                {items.description}
-                <div className="flex gap-3 mt-16">
-                  <img
-                    className="w-[40px] h-[40px] rounded-full "
-                    src={items.img2}
-                    alt={items.name}
-                  />
-                  <div>
-                    <b>{items.name}</b>
-                    <p className="text-gray-600">{items.text5}</p>
+        <div className="mt-20">
+          <Slider {...settings}>
+            {DUMMY_EXPENSES.map((items) => (
+              <div key={items.id}>
+                <div className="w-[400px] h-[350px] bg-white rounded-lg  shadow-neutral-900 p-16 ">
+                  {items.description}
+                  <div className="flex gap-3 mt-16">
+                    <img
+                      className="w-[40px] h-[40px] rounded-full "
+                      src={items.img2}
+                      alt={items.name}
+                    />
+                    <div>
+                      <b>{items.name}</b>
+                      <p className="text-gray-600">{items.text5}</p>
+                    </div>
                   </div>
                 </div>
               </div>
-            </div>
-          ))}
-        </Slider>
+            ))}
+          </Slider>
+        </div>
       </div>
     </div>
   );

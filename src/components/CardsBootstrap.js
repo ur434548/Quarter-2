@@ -5,9 +5,10 @@ function TextExample({ children }) {
     <Card
       style={{
         width: "18rem",
-        height: "15rem",
+        height: "17rem",
         gap: "25px",
         display: "flex",
+    
         justifyContent: "center",
         alignItems: "center",
         boxShadow:" 4px 5px 9px lightgrey"

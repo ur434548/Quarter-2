@@ -165,7 +165,7 @@ export default function FeaturedListing() {
                     <span>{items.text4}</span>
                   </div>
                 </div>
-                <div className="flex pl-8 mt-3 items-center">
+                <div className="flex pl-8 mt-10 items-center">
                   <img
                     className="w-[40px] h-[40px] rounded-full mr-4"
                     src={items.img2}

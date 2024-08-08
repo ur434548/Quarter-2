@@ -1,0 +1,6 @@
+.custom-animate__fadeOutRight:hover {
+    animation-name: fadeOutRight; /* The name of the animation from animate.css */
+    animation-duration: 1s; /* Change the duration */
+
+  }
+  

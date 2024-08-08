@@ -7,12 +7,12 @@ export default function Navbar() {
   return (
     <div>
       <div className="flex justify-evenly mt-10 item-center">
-        <div className="flex ">
-          <FaHome size="2rem" className="text-orange-700 m-1" />
+        <div className="flex  gap-2">
+          <FaHome size="2rem" className="text-custom-orange " />
           <p className="font-bold text-3xl text-cyan-950">Quarter</p>
         </div>
         <div className="flex justify-evenly  ">
-          <ul className="flex flex-row text-2xl gap-7 ">
+          <ul className="flex flex-row text-xl gap-7 text-cyan-950 font-bold ">
             <li>Home+</li>
             <li>About+</li>
             <li>Property+</li>
@@ -22,13 +22,13 @@ export default function Navbar() {
           </ul>
         </div>
         <div className="flex flex-row gap-3 ">
-          <div className="shadow shadow-neutral-300 p-1 w-10 h-10 items-center">
+          <div className="shadow shadow-neutral-300 p-2 w-12 h-12 items-center">
             <IoIosSearch size="2rem " className="text-cyan-950" />
           </div>
-          <div className="shadow shadow-neutral-300 w-10 p-1 h-10 items-center">
+          <div className="shadow shadow-neutral-300 p-2 w-12 h-12 items-center">
             <IoIosContact size="2rem " className="text-cyan-950" />
           </div>
-          <div className="shadow shadow-neutral-300 p-1 w-10 h-10 items-center">
+          <div className="shadow shadow-neutral-300 p-2 w-12 h-12 items-center">
             <MdOutlineAddShoppingCart size="2rem " className="text-cyan-950" />
           </div>
         </div>

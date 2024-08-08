@@ -24,7 +24,7 @@ export default function FeaturedListing() {
       img: House7,
       text1: "by:Admin",
       text2: "Decorate",
-      title: "TRecent Commercial Real Estate Transactions",
+      title: "Recent Commercial Real Estate Transactions",
       text4: "June 24, 2021",
       text3: "READ MORE",
     },
@@ -93,6 +93,8 @@ export default function FeaturedListing() {
             Latest News Feeds
           </h1>
         </div>
+<div className="mt-20">
+
 
         <Slider {...settings}>
           {DUMMY_EXPENSES.map((items) => (
@@ -101,37 +103,40 @@ export default function FeaturedListing() {
                 <img
                   src={items.img}
                   alt={items.title}
-                  className="w-full h-[220px] object-cover "
+                  className="w-full h-[220px] object-cover transition-transform duration-1000 ease-in-out transform hover:scale-[1.01]"
                 />
-                <div className="flex justify-between p-2">
-                  <div className="flex items-center">
-                    <RiAdminLine
-                      size="1.4rem"
-                      className="text-orange-600 mr-2"
-                    />
-                    {items.text1}
+                <div className="p-4">
+                  <div className="flex justify-between p-2">
+                    <div className="flex items-center">
+                      <RiAdminLine
+                        size="1.4rem"
+                        className="text-orange-600 mr-2"
+                      />
+                      {items.text1}
+                    </div>
+                    <div className="flex items-center">
+                      <MdEco size="1.4rem" className="text-orange-600 mr-2" />
+                      {items.text2}
+                    </div>
                   </div>
-                  <div className="flex items-center">
-                    <MdEco size="1.4rem" className="text-orange-600 mr-2" />
-                    {items.text2}
+                  <div className="text-2xl font-bold p-2">{items.title}</div>
+                  <hr />
+                  <div className="flex gap-32 ">
+                    <div className="flex items-center mr-10 ">
+                      <SlCalender
+                        size="1.2rem"
+                        className="text-orange-600 mr-3"
+                      />
+                      {items.text4}
+                    </div>
+                    <div className="p-2 text-orange-600 ">{items.text3}</div>
                   </div>
-                </div>
-                <div className="text-2xl font-bold p-2">{items.title}</div>
-                <hr />
-                <div className="flex gap-32 p-[22px]">
-                  <div className="flex items-center ">
-                    <SlCalender
-                      size="1.2rem"
-                      className="text-orange-600 mr-2"
-                    />
-                    {items.text4}
-                  </div>
-                  <div className="p-2 text-orange-600 ">{items.text3}</div>
                 </div>
               </div>
             </div>
           ))}
         </Slider>
+      </div>
       </div>
     </div>
   );

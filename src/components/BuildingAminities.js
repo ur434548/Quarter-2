@@ -20,8 +20,8 @@ function TextExample() {
       </div>
       <div className="mt-10 ">
         <div className="flex flex-row mx-auto justify-center  gap-4 mb-4  ">
-          <div>
-            <CardsBootstrap>
+        
+            <CardsBootstrap >
               <FaCar
                 size="6rem"
                 className="text-orange-400 p-4 bg-orange-100 rounded-full"
@@ -29,7 +29,7 @@ function TextExample() {
               <h3 className=" text-center">Parking Space</h3>
               <FaArrowRight size="1rem" className="text-slate-500 " />
             </CardsBootstrap>
-          </div>
+          
 
           <CardsBootstrap>
             <PiSwimmingPoolDuotone

@@ -8,28 +8,29 @@ import { FaLocationDot } from "react-icons/fa6";
 
 export default function InfoNavbar() {
   return (
-    <div className="bg-cyan-950  h-auto">
-      <div className="flex justify-around  content-center">
-        <div className="flex justify-evenly self-center content-center  gap-1">
-          <IoIosMail size="1.2rem " className="text-orange-800" />
-          <p className="font-bold text-white">Info@webGmail.com</p>
-
-          <FaLocationDot size="1.2rem" className="text-orange-800" />
-          <p className="font-bold text-white">15/A,Nest Tower,NYC</p>
-        </div>
-        <div></div>
-        <div className="flex justify-center  items-center h-10">
-          <div className="flex gap-2 items-center">
-            <FaFacebookSquare size="1.2rem " className="text-white"/>
-            <FaTwitter size="1.2rem" className="text-white" />
-            <FaSquareInstagram size="1.2rem" className="text-white"/>
-            <GiCarWheel size="1.2rem" className="text-white" />
-            <button className="bg-orange-200 text-sm p-1 rounded-full text-red-900">
-              Add Listing
-            </button>
-          </div>
-        </div>
+    <div className="bg-cyan-950 h-12 flex items-center g justify-center">
+  <div className="flex justify-between items-center w-full px-4 max-w-screen-lg">
+    <div className="flex items-center gap-4">
+      <div className="flex items-center gap-2">
+        <IoIosMail size="1.2rem" className="text-custom-orange" />
+        <p className="font-bold text-white">Info@webGmail.com</p>
+      </div>
+      <div className="flex items-center gap-2">
+        <FaLocationDot size="1.2rem" className="text-custom-orange" />
+        <p className="font-bold text-white">15/A, Nest Tower, NYC</p>
       </div>
     </div>
+    <div className="flex items-center gap-4">
+      <FaFacebookSquare size="1.2rem" className="text-white" />
+      <FaTwitter size="1.2rem" className="text-white" />
+      <FaSquareInstagram size="1.2rem" className="text-white" />
+      <GiCarWheel size="1.2rem" className="text-white" />
+      <button className="bg-custom-orange h-12 text-white block px-4 py-2 text-sm">
+        Add Listing
+      </button>
+    </div>
+  </div>
+</div>
+
   );
 }

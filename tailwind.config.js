@@ -7,7 +7,11 @@ module.exports = {
     
   ],
   theme: {
-    extend: {},
+    extend: {
+      colors:{
+        'custom-orange': '#ff5a3c',
+      },
+    },
   },
   plugins: [],
 };
