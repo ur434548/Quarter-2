@@ -36,19 +36,19 @@ export default function TodaySellProperties() {
       {sellProperties.map((items, index) => (
         <div key={index} className="flex justify-center mt-20">
           <div className="w-1/3">
-            <button className="bg-orange-100 p-2 w-40 rounded-full  text-red-900 mb-4">
+            <button className="bg-red-50 p-2 w-40 rounded-full  text-custom-orange mb-4">
               About Us
             </button>
-            <div className="text-3xl font-bold tracking-tight  text-gray-900 sm:text-4xl">
+            <div className="text-3xl font-bold tracking-tight  text-gray-900 sm:text-5xl">
               {items.text1}
             </div>
-            <div className="text-slate-600 w-[560px] ">{items.text2}</div>
+            <div className="text-slate-600 w-[560px] mt-4 ">{items.text2}</div>
             {/* live music div */}
             <div className="mt-5 mb-10  text-slate-600 p-2">
-              <div className="m-2">---{items.text3}</div>
-              <div className="m-2">---{items.text4}</div>
-              <div className="m-2">---{items.text5}</div>
-              <div className="m-2">---{items.text6}</div>
+              <div className="m-2"><span className="text-custom-orange">---</span> {items.text3}</div>
+              <div className="m-2"><span className="text-custom-orange">---</span> {items.text4}</div>
+              <div className="m-2"><span className="text-custom-orange">---</span> {items.text5}</div>
+              <div className="m-2"><span className="text-custom-orange">---</span> {items.text6}</div>
             </div>
             {/* bedrooom Div */}
             <div className="flex gap-5 mb-8 text-slate-600 p-2 cursor-pointer">

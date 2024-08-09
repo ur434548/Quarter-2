@@ -13,40 +13,40 @@ export default function App() {
   });
 
   return (
-    <div className="h-96 bg-slate-100 mt-10 flex justify-center items-center gap-20">
-      <div className="content w-64 h-64 bg-white flex flex-col justify-center items-center p-6 rounded-lg shadow-lg">
-        <FcBusinessContact size="4rem" />
+    <div className="h-[400px] bg-slate-100 mt-10 flex justify-center items-center gap-20">
+      <div className="content w-64 h-64  flex flex-col justify-center items-center p-6 rounded-lg ">
+        <FcBusinessContact size="4rem" className="mb-4" />
         <CountUp
-          end={100}
+          end={560}
           enableScrollSpy
-          className="text-4xl font-bold text-center"
+          className="text-6xl font-[900] "
         />
         <p className="text-slate-500 font-semibold mt-3 ">Total Area Sq</p>
       </div>
-      <div className="content w-64 h-64 bg-white flex flex-col justify-center items-center p-6 rounded-lg shadow-lg">
-        <FcEngineering size="4rem" />
+      <div className="content w-64 h-64  flex flex-col justify-center items-center p-6 rounded-lg ">
+        <FcEngineering size="4rem" className="mb-4" />
         <CountUp
-          end={100}
+          end={197}
           enableScrollSpy
-          className="text-4xl font-bold text-center"
+           className="text-6xl font-[900] "
         />
         <p className="text-slate-500 font-semibold mt-3 ">Apartment Sold</p>
       </div>
-      <div className="content w-64 h-64 bg-white flex flex-col justify-center items-center p-6 rounded-lg shadow-lg">
-        <FcCustomerSupport size="4rem" />
+      <div className="content w-64 h-64  flex flex-col justify-center items-center p-6 rounded-lg ">
+        <FcCustomerSupport size="4rem" className="mb-4"/>
         <CountUp
-          end={100}
+          end={268}
           enableScrollSpy
-          className="text-4xl font-bold text-center"
+          className="text-6xl font-[900] "
         />
         <p className="text-slate-500 font-semibold mt-3 ">Total Construction</p>
       </div>
-      <div className="content w-64 h-64 bg-white flex flex-col justify-center items-center p-6 rounded-lg shadow-lg">
-        <FcRating size="4rem" />
+      <div className="content w-64 h-64  flex flex-col justify-center items-center p-6 rounded-lg ">
+        <FcRating size="4rem" className="mb-4" />
         <CountUp
-          end={100}
+          end={340}
           enableScrollSpy
-          className="text-4xl font-bold text-center"
+         className="text-6xl font-[900] "
         />
         <p className="text-slate-500 font-semibold mt-3 ">Apartio Rooms</p>
       </div>

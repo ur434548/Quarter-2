@@ -1,6 +1,7 @@
 import React from "react";
 import House1 from "../pics/House1.jpg";
 import { FcHome } from "react-icons/fc";
+import Button from "./Button";
 export default function TheLeadingRealEstate() {
   const leadingEstate = [
     {
@@ -18,7 +19,7 @@ export default function TheLeadingRealEstate() {
   ];
   return (
     <div>
-      {leadingEstate.map((items ,index) => (
+      {leadingEstate.map((items, index) => (
         <div key={index} className="flex justify-center mt-20">
           <img
             src={items.img}
@@ -26,32 +27,35 @@ export default function TheLeadingRealEstate() {
             className="w-[550px] h-[650px] rounded-3xl p-3"
           />
           <div className="mt-5 ml-20">
-            <button className="bg-orange-100 p-2 w-40 rounded-full  text-red-900 mb-4">
+            <Button
+              className="bg-red-50 p-2 w-40 rounded-full  text-custom-orange
+             mb-4"
+            >
               About Us
-            </button>
+            </Button>
             <h1 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl ">
               {items.text1}
             </h1>
 
             <p className="text-slate-600 mt-5">{items.text2}</p>
             <div className="flex gap-[9px] ml-20 mt-10 text-slate-600 text-base ">
-              <span className="bg-orange-300 p-1 rounded-full">
+              <span className="bg-red-100 w-12 h-12 p-2 rounded-full">
                 <FcHome size="2rem" />
               </span>
               {items.text3}
 
-              <span className="bg-orange-300 p-1 rounded-full">
+              <span className="bg-red-100 w-12 h-12 p-2 rounded-full">
                 <FcHome size="2rem" />
               </span>
               {items.text4}
             </div>
             <div className="flex  gap-[9px] ml-20 mt-10 text-slate-600 text-base">
-              <span className="bg-orange-300 p-1 rounded-full">
+              <span className="bg-red-100 w-12 h-12 p-2 rounded-full">
                 <FcHome size="2rem" />
               </span>
               {items.text5}
 
-              <span className="bg-orange-300 p-1 rounded-full">
+              <span className="bg-red-100 w-12 h-12 p-2 rounded-full">
                 <FcHome size="2rem" />
               </span>
               {items.text6}
@@ -59,9 +63,9 @@ export default function TheLeadingRealEstate() {
             <div className=" text-slate-500 mt-5 w-[800px] mt-20 bg-orange-50 p-10 text-slate-500 text-base ">
               {items.text7}
             </div>
-            <button className="mt-16  w-36 h-12 bg-orange-500 text-white text-1xl font-semibold  ">
+            <Button className="mt-16  w-40 h-12 bg-custom-orange text-white text-lg  ">
               Our Services
-            </button>
+            </Button>
           </div>
         </div>
       ))}

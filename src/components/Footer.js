@@ -90,7 +90,7 @@ export default function Footer() {
           </button>
         </div>
       </div>
-      <div className="Parent Container bg-slate-900 text-white flex flex-wrap p-10 mt-40 justify-center items-center ">
+      <div className="Parent Container bg-slate-900 text-white flex flex-wrap p-10 mt-60 justify-center items-center ">
         <div className="w-80 h-100">
           {first.map((item, index) => (
             <ul key={index} className="p-4 text-[16px]">

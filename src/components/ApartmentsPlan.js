@@ -3,6 +3,7 @@ import Aprtments from "../pics/Aprtments.png";
 import Container from "react-bootstrap/Container";
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
+import Button from "./Button"
 export default function ApartmentsPlan() {
   const ApartmentsPlan = [
     {
@@ -19,20 +20,20 @@ export default function ApartmentsPlan() {
   ];
 
   return (
-      <div>
+      <div className="mt-20">
         <div className="flex flex-col items-center  mx-auto my-10">
-          <button className="bg-orange-100 p-2 w-40 mt-10 rounded-full text-center text-red-900 mb-4">
+          <Button className="bg-red-100 p-2 w-60  mt-10 rounded-full text-center text-custom-orange mb-4">
             Apartments Sktech
-          </button>
+          </Button>
           <h1 className="text-3xl font-bold tracking-tight  text-center text-gray-900 sm:text-5xl">
             Apartments Plan
           </h1>
         </div>
-        <div>
-          <Navbar className="text-lg ml-[400px] mb-2 " data-bs-theme="light">
+        <div >
+          <Navbar className="text-lg font-bold  ml-[500px] mb-2  " data-bs-theme="light">
             <Container>
-              <Nav className="me-auto gap-5 ">
-                <Nav.Link href="#home"> The Studio</Nav.Link>
+              <Nav className="me-auto gap-5  ">
+                <Nav.Link href="#home" > The Studio</Nav.Link>
                 <Nav.Link href="#home"> Deluxe Portion</Nav.Link>
                 <Nav.Link href="#features"> Penthouse</Nav.Link>
                 <Nav.Link href="#pricing">Top Garden</Nav.Link>
@@ -45,7 +46,7 @@ export default function ApartmentsPlan() {
         {ApartmentsPlan.map((items) => (
           //parent div
           <div className="flex w-[1200px] mx-auto justify-center   p-4">
-            <div className="bg-orange-600 w-2/4 p-20 w-[600px]">
+            <div className="bg-custom-orange w-2/4 p-20 w-[600px] h-[550px]">
               <div className="flex flex-col gap-5">
                 <div className="text-3xl text-white  font-bold">
                   {items.text2}
@@ -61,7 +62,7 @@ export default function ApartmentsPlan() {
               </div>
             </div>
             <div className="flex justify-center items-center p-4">
-              <img src={items.img} alt="Item Image" className="w-[600px]" />
+              <img src={items.img} alt="Item Image" className="w-[600px] "  />
             </div>
           </div>
         ))}

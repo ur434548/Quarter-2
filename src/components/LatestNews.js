@@ -7,7 +7,7 @@ import Button from "./Button";
 import { MdEco } from "react-icons/md";
 import House7 from "../pics/House7.jpg";
 import { SlCalender } from "react-icons/sl";
-import ArrowComponent from "./ArrowComponent";
+import { NextArrow, PrevArrow } from "./ArrowComponent";
 export default function FeaturedListing() {
   const DUMMY_EXPENSES = [
     {
@@ -80,22 +80,21 @@ export default function FeaturedListing() {
     speed: 500,
     slidesToShow: 4,
     slidesToScroll: 1,
-    nextArrow: <ArrowComponent icon=">" />,
-    prevArrow: <ArrowComponent icon="<" />,
+    nextArrow: <PrevArrow />,
+    prevArrow: <NextArrow />,
   };
 
   return (
-    <div className="w-full">
-      <div className="w-[1690px] mx-auto mt-15">
-        <div className="flex flex-col items-center mx-auto mt-10">
-          <Button>News & Blogs </Button>
-          <h1 className="text-3xl font-bold tracking-tight mb-10 text-center text-gray-900 sm:text-5xl">
-            Latest News Feeds
-          </h1>
-        </div>
-<div className="mt-20">
-
-
+    <div className="w-[1690px] mx-auto ">
+      <div className="flex flex-col items-center mx-auto mt-10">
+        <Button className="bg-red-100 p-2 w-60  mt-10 rounded-full text-center text-custom-orange mb-4">
+          News & Blogs{" "}
+        </Button>
+        <h1 className="text-3xl font-bold tracking-tight mb-10 text-center text-gray-900 sm:text-5xl">
+          Latest News Feeds
+        </h1>
+      </div>
+      <div className="mt-20 ">
         <Slider {...settings}>
           {DUMMY_EXPENSES.map((items) => (
             <div key={items.id} className="p-2">
@@ -136,7 +135,6 @@ export default function FeaturedListing() {
             </div>
           ))}
         </Slider>
-      </div>
       </div>
     </div>
   );
