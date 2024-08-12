@@ -22,15 +22,15 @@ export default function ApartmentsPlan() {
   return (
       <div className="mt-20">
         <div className="flex flex-col items-center  mx-auto my-10">
-          <Button className="bg-red-100 p-2 w-60  mt-10 rounded-full text-center text-custom-orange mb-4">
+          <Button className="bg-red-100 p-2 w-[170px] h-[30px] mt-10 rounded-full text-center text-custom-orange mb-4">
             Apartments Sktech
           </Button>
-          <h1 className="text-3xl font-bold tracking-tight  text-center text-gray-900 sm:text-5xl">
+          <h1 className="3xl font-bold tracking-tight  text-center text-gray-900 text-[44px]">
             Apartments Plan
           </h1>
         </div>
         <div >
-          <Navbar className="text-lg font-bold  ml-[500px] mb-2  " data-bs-theme="light">
+          <Navbar className="text-[20px] font-bold  ml-[500px] mb-2  " data-bs-theme="light">
             <Container>
               <Nav className="me-auto gap-5  ">
                 <Nav.Link href="#home" > The Studio</Nav.Link>
@@ -48,7 +48,7 @@ export default function ApartmentsPlan() {
           <div className="flex w-[1200px] mx-auto justify-center   p-4">
             <div className="bg-custom-orange w-2/4 p-20 w-[600px] h-[550px]">
               <div className="flex flex-col gap-5">
-                <div className="text-3xl text-white  font-bold">
+                <div className="text-[30px] text-white  font-bold">
                   {items.text2}
                 </div>
                   <div className="text-white text-lg">{items.text3}</div>
@@ -62,7 +62,7 @@ export default function ApartmentsPlan() {
               </div>
             </div>
             <div className="flex justify-center items-center p-4">
-              <img src={items.img} alt="Item Image" className="w-[600px] "  />
+              <img src={items.img} alt="Item Image" className="w-[570px] h-[546px] "  />
             </div>
           </div>
         ))}

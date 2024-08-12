@@ -87,10 +87,10 @@ export default function FeaturedListing() {
   return (
     <div className="w-[1690px] mx-auto ">
       <div className="flex flex-col items-center mx-auto mt-10">
-        <Button className="bg-red-100 p-2 w-60  mt-10 rounded-full text-center text-custom-orange mb-4">
+        <Button className="bg-red-100 p-2 w-[145px] h-[30px]  mt-10 rounded-full text-center text-custom-orange mb-4">
           News & Blogs{" "}
         </Button>
-        <h1 className="text-3xl font-bold tracking-tight mb-10 text-center text-gray-900 sm:text-5xl">
+        <h1 className="text-[44px] font-bold tracking-tight mb-10 text-center text-gray-900 ">
           Latest News Feeds
         </h1>
       </div>

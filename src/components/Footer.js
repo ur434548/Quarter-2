@@ -1,5 +1,5 @@
 import React from "react";
-import './custom.css';
+import "./custom.css";
 import payment from "../pics/payment.png";
 import { FaHome } from "react-icons/fa";
 import { MdOutlinePhoneForwarded } from "react-icons/md";
@@ -75,8 +75,8 @@ export default function Footer() {
   ];
 
   return (
-    <div className="relative">
-      <div className="flex justify-between absolute inset-0 items-center bg-custom-orange h-[150px] w-[1000px] p-4 transform -translate-x-1/2 -translate-y-1/2 left-1/2 top-[-30px] " >
+    <div className="relative  bg-slate-900">
+      <div className="flex justify-between absolute inset-0 items-center bg-custom-orange h-[190px] w-[1170px] p-[50px] transform -translate-x-1/2 -translate-y-1/2 left-1/2 top-[-30px] ">
         <div className="text-white text-right">
           <h1 className="text-4xl font-bold">Looking for a dream home</h1>
           <p className="mt-2 text-lg">
@@ -84,14 +84,14 @@ export default function Footer() {
           </p>
         </div>
         <div className="flex items-center">
-          <button className="bg-white text-custom-orange border-none py-2 px-4 text-lg flex items-center space-x-2   custom-animate__fadeOutRigh" >
-            <span>Explore Properties</span>
-            <FaLongArrowAltRight />
+          <button class="relative flex flex gap-2 h-[60px] w-[242px] text-[16px] items-center justify-center overflow-hidden bg-gray-800 text-white shadow-2xl transition-all before:absolute before:h-0 before:w-0 before:rounded-full before:bg-orange-600 before:duration-500 before:ease-out hover:shadow-orange-600 hover:before:h-56 hover:before:w-72">
+            <span class="relative z-10">Explore Items</span>
+            <FaLongArrowAltRight size="2rem"  />
           </button>
         </div>
       </div>
-      <div className="Parent Container bg-slate-900 text-white flex flex-wrap p-10 mt-60 justify-center items-center ">
-        <div className="w-80 h-100">
+      <div className="Parent Container bg-slate-900 text-white flex p-[132px] mb-[-45px] flex-wrap p-10 mt-60 justify-center items-center ">
+        <div className="w-[380px] h-[304px] p-[0px 35px 0px 0px]">
           {first.map((item, index) => (
             <ul key={index} className="p-4 text-[16px]">
               <li className="flex items-center mb-3">
@@ -125,7 +125,7 @@ export default function Footer() {
         </div>
 
         {/* Repeat the same pattern for the other columns */}
-        <div className="w-80 h-100">
+        <div className="w-[255px] h-[301px]">
           {second.map((item, index) => (
             <ul key={index} className="p-4 text-[16px]">
               <p className="text-3xl font-extrabold mb-3 ">{item.title}</p>
@@ -144,7 +144,7 @@ export default function Footer() {
         </div>
 
         {/* Third column */}
-        <div className="w-80 h-100">
+        <div className="w-[255px] h-[301px]">
           {third.map((item, index) => (
             <ul key={index} className="p-4 text-[16px]">
               <p className="text-3xl font-extrabold mb-3 ">{item.title}</p>
@@ -161,7 +161,7 @@ export default function Footer() {
         </div>
 
         {/* Fourth column */}
-        <div className="w-80 h-100">
+        <div className="w-[255px] h-[301px]">
           {fourth.map((item, index) => (
             <ul key={index} className="p-4 text-[16px]">
               <p className="text-3xl font-extrabold mb-3 ">{item.title}</p>
@@ -180,7 +180,7 @@ export default function Footer() {
         </div>
 
         {/* Fifth column */}
-        <div className="w-80 h-100">
+        <div className="w-[398px] h-[310px]">
           {fifth.map((item, index) => (
             <ul key={index} className="p-4 text-[16px]">
               <p className="text-3xl font-extrabold mb-3"> {item.title}</p>
@@ -188,21 +188,21 @@ export default function Footer() {
               <li className="mb-3">
                 <input
                   type="email"
-                  className="p-2 "
+                  className="p-[20px] w-[370px]"
                   placeholder="abc@gamil.com"
                 />
               </li>
 
               <p className="text-2xl font-extrabold mb-3"> {item.accept}</p>
               <li className="mb-3">
-                <img src={item.img} />
+                <img src={item.img} className="h-[42px] w-[370px]" />
               </li>
             </ul>
           ))}
         </div>
       </div>
       {/* Last column */}
-      <div className="flex flex-row flex-wrap justify-around bg-zinc-700 text-white p-4">
+      <div className="flex flex-row flex-wrap justify-around h-[80px] bg-zinc-700 text-white p-[10px]">
         {last.map((item, index) => (
           <div key={index} className="p-4 flex gap-[1000px] ">
             <div className="  text-lg hover:text-custom-orange ">

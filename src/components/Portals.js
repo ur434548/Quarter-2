@@ -35,7 +35,7 @@ export default function App() {
 
   return (
     <div
-      className="flex items-center justify-center bg-cover mt-10 h-[300px]"
+      className="flex items-center justify-center bg-cover mt-10 h-[350px]"
       style={{
         backgroundImage: `url(${House3})`,
       }}

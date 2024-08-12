@@ -8,7 +8,7 @@ import { FaLocationDot } from "react-icons/fa6";
 
 export default function InfoNavbar() {
   return (
-    <div className="bg-cyan-950 h-12 flex items-center g justify-center">
+    <div className="bg-cyan-950 h-[41px] flex items-center g justify-center">
   <div className="flex justify-between items-center w-full px-4 max-w-screen-lg">
     <div className="flex items-center gap-4">
       <div className="flex items-center gap-2">
@@ -25,7 +25,7 @@ export default function InfoNavbar() {
       <FaTwitter size="1.2rem" className="text-white" />
       <FaSquareInstagram size="1.2rem" className="text-white" />
       <GiCarWheel size="1.2rem" className="text-white" />
-      <button className="bg-custom-orange h-12 text-white block px-4 py-2 text-sm">
+      <button className="bg-custom-orange h-11 text-white block px-4 py-2 text-sm">
         Add Listing
       </button>
     </div>

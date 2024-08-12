@@ -5,8 +5,8 @@ function TextExample({ children , style, className}) {
     <Card
     className={className}
       style={{
-        width: "18rem",
-        height: "17rem",
+        width: "270px",
+        height: "244px",
         display: "flex",
         justifyContent: "center",
         alignItems: "center",

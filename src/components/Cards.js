@@ -28,15 +28,15 @@ const posts = [
 
 export default function Cards() {
   return (
-    <div className=" bg-slate-100 h-[900px] p-20 mt-40">
-      <div className="mx-auto">
-        <div className="flex flex-col items-center justify-center h-full">
-          <Button className="bg-red-50  text-[16px] p-2  rounded-full text-custom-orange w-36 mb-4">
+    <div className=" bg-slate-100 h-[800px] p-[120px 0px 90px] mt-40">
+      <div className="mx-auto pt-10">
+        <div className="flex flex-col  items-center mt-20 justify-center ">
+          <Button className="bg-red-50  text-[16px] p-2  rounded-full text-custom-orange w-[110px] h-[30px] ">
             Our Services
           </Button>
-          <h2 className="text-3xl font-ultra-bold tracking-tight text-gray-900 text-5xl">
+          <h1 className="text-3xl font-900 tracking-tight text-gray-900 text-[44px]">
             Our Main Focus
-          </h2>
+          </h1>
         </div>
         <div className="flex flex-wrap justify-center  gap-5  ">
           {posts.map((posts) => (

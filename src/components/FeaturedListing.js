@@ -123,13 +123,13 @@ export default function FeaturedListing() {
   };
 
   return (
-    <div className="w-full mt-20">
+    <div className="w-full mt-20 p-[]115px 133.203px 90px">
       <div className="w-[1690px] mx-auto mt-15">
         <div className="flex flex-col items-center mx-auto my-10">
-          <Button className="bg-red-50  text-[16px] p-2  rounded-full text-custom-orange w-36 mb-4">
+          <Button className="bg-red-50  text-[16px] p-2  rounded-full text-custom-orange w-[115] h-[30px] mb-4">
             Properties
           </Button>
-          <h1 className="text-3xl font-bold tracking-tight mb-3 text-center text-gray-900 sm:text-5xl">
+          <h1 className=" font-bold tracking-tight mb-3 text-center text-gray-900 text-[44px]">
             Featured Listing
           </h1>
         </div>

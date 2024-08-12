@@ -13,8 +13,8 @@ function TextExample() {
   return (
     <div>
       <div className="flex flex-col items-center mx-auto mt-20 mb-20 ">
-        <Button  className="bg-red-100 p-2 w-60  mt-10 rounded-full text-center text-custom-orange mb-4">Our Animities</Button>
-        <h1 className="text-3xl font-bold  text-center  text-5xl ">
+        <Button  className="bg-red-100 p-2 w-[130px] h-[30px]  mt-10 rounded-full text-center text-custom-orange mb-4">Our Animities</Button>
+        <h1 className="text-3xl font-bold  text-center  text-[44px] ">
           Building Aminities
         </h1>
       </div>

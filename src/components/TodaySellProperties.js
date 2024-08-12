@@ -32,26 +32,26 @@ export default function TodaySellProperties() {
   ];
 
   return (
-    <div>
+    <div className="p-[120px 0px 90px]">
       {sellProperties.map((items, index) => (
-        <div key={index} className="flex justify-center mt-20">
+        <div key={index} className="flex justify-center mt-40">
           <div className="w-1/3">
-            <button className="bg-red-50 p-2 w-40 rounded-full  text-custom-orange mb-4">
+            <button className="bg-red-50 p-2 w-[108px] h-[30px] text-[16px] rounded-full  text-custom-orange mb-4">
               About Us
             </button>
-            <div className="text-3xl font-bold tracking-tight  text-gray-900 sm:text-5xl">
+            <div className="text-3xl font-bold tracking-tight  text-gray-900 text-[44px]">
               {items.text1}
             </div>
-            <div className="text-slate-600 w-[560px] mt-4 ">{items.text2}</div>
+            <div className="text-slate-400  text-[16px] mt-4  w-[560px]">{items.text2}</div>
             {/* live music div */}
-            <div className="mt-5 mb-10  text-slate-600 p-2">
+            <div className="mt-5 mb-10   p-2 text-slate-400  text-[16px]">
               <div className="m-2"><span className="text-custom-orange">---</span> {items.text3}</div>
               <div className="m-2"><span className="text-custom-orange">---</span> {items.text4}</div>
               <div className="m-2"><span className="text-custom-orange">---</span> {items.text5}</div>
               <div className="m-2"><span className="text-custom-orange">---</span> {items.text6}</div>
             </div>
             {/* bedrooom Div */}
-            <div className="flex gap-5 mb-8 text-slate-600 p-2 cursor-pointer">
+            <div className="flex gap-5 mb-8 text-slate-400 text-[14px] p-2 cursor-pointer">
               <div>
                 <MdOutlineBedroomChild />
                 {items.text7}
@@ -71,21 +71,21 @@ export default function TodaySellProperties() {
             </div>
 
             {/* images div */}
-            <div className="flex gap-5 cursor-pointer">
+            <div className="flex gap-2 cursor-pointer">
               <img
                 src={items.img}
                 alt="Sell-Properties-Pics"
-                className="w-36"
+                className="w-[160px] h-[114px]"
               />
               <img
                 src={items.img1}
                 alt="Sell-Properties-Pics"
-                className="w-36"
+                className="w-[160px] h-[114px]"
               />
               <img
                 src={items.img2}
                 alt="Sell-Properties-Pics"
-                className="w-36"
+                className="w-[160px] h-[114px]"
               />
             </div>
           </div>
@@ -95,7 +95,7 @@ export default function TodaySellProperties() {
               <img
                 src={items.img3}
                 alt="Sell-Properties-Pics"
-                className="w-[550px] cursor-pointer"
+                className="w-[540px]  h-[573px] cursor-pointer"
               />
             </div>
           </div>
