@@ -5,7 +5,17 @@ import "slick-carousel/slick/slick-theme.css";
 import person from "../pics/person.jpg";
 import Button from "./Button";
 
-import { NextArrow, PrevArrow } from "./ArrowComponent";
+import { TbCircleArrowLeftFilled } from "react-icons/tb";
+import { TbCircleArrowRightFilled } from "react-icons/tb";
+
+function NextArrow({ currentSlide, slideCount, ...props }) {
+  return <TbCircleArrowLeftFilled {...props}  color="darkcyan"  />;
+}
+
+function PrevArrow({ currentSlide, slideCount, ...props }) {
+  return <TbCircleArrowRightFilled {...props}  color="darkcyan" />;
+}
+
 export default function FeaturedListing() {
   const DUMMY_EXPENSES = [
     {
@@ -70,7 +80,7 @@ export default function FeaturedListing() {
   const settings = {
     infinite: true,
     speed: 500,
-    slidesToShow: 4,
+    slidesToShow: 3,
     slidesToScroll: 1,
     nextArrow: <PrevArrow />,
 
@@ -79,8 +89,8 @@ export default function FeaturedListing() {
 
   return (
     <div className="bg-slate-100 mt-40 h-[700px]">
-      <div className="w-[1690px] mx-[140px] p-3">
-        <div className="flex flex-col items-center mx-auto mt-10">
+      
+        <div className="flex flex-col items-center  mt-10">
           <Button className="bg-red-100 p-2 w-60  mt-10 rounded-full text-center text-custom-orange mb-4">
             Our Testimonial
           </Button>
@@ -89,10 +99,10 @@ export default function FeaturedListing() {
             Clients Feedback
           </h1>
         </div>
-        <div className="mt-20">
-          <Slider {...settings}>
+        <div className="mt-16 mx-60">
+          <Slider  {...settings}>
             {DUMMY_EXPENSES.map((items) => (
-              <div key={items.id}>
+              <div key={items.id} className="mx-20" >
                 <div className="w-[370px] h-[361px] bg-white rounded-lg text-lg text-slate-600 shadow-neutral-900 p-16 ">
                   <span className="text-[18px]">{items.description}</span>
                   <div className="flex gap-3 mt-12">
@@ -112,6 +122,6 @@ export default function FeaturedListing() {
           </Slider>
         </div>
       </div>
-    </div>
+   
   );
 }

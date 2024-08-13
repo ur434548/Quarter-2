@@ -7,7 +7,17 @@ import HouseImage from "../pics/HouseImage.png";
 import Button from "../components/Button";
 import { FaHome } from "react-icons/fa";
 import { FaRegCirclePlay } from "react-icons/fa6";
-import { NextArrow, PrevArrow } from './ArrowComponent'; 
+import { TbCircleArrowLeftFilled } from "react-icons/tb";
+import { TbCircleArrowRightFilled } from "react-icons/tb";
+
+function NextArrow({ currentSlide, slideCount, size, ...props }) {
+  return <TbCircleArrowLeftFilled {...props} color="darkcyan" size={40} />;
+}
+
+function PrevArrow({ currentSlide, slideCount, ...props }) {
+  return <TbCircleArrowRightFilled {...props} color="darkcyan" />;
+}
+
 export default function SimpleSlider() {
   const array = [
     {
@@ -17,14 +27,13 @@ export default function SimpleSlider() {
         "Enimad minim veniam quis nostrud exercitationllamco laboris Lorem ipsum dolor sit amet",
     },
   ];
-  const  settings = {
+  const settings = {
     infinite: true,
     speed: 500,
     dots: true,
     slidesToShow: 1,
     slidesToScroll: 1,
-    nextArrow: <PrevArrow  size="3rem" className="text-2xl colot-black "  />,
-
+    nextArrow: <PrevArrow />,
     prevArrow: <NextArrow />,
   };
 
@@ -56,7 +65,9 @@ export default function SimpleSlider() {
                       </p>
                     </div>
                     <div className="mt-4 flex gap-3 ">
-                    <Button class="text-red color-ornage-600 hover:before:bg-redborder-red-500 relative text-[16px] h-[60px] w-[212px] overflow-hidden border border-red-500 bg-white px-3 text-red-500 shadow-2xl transition-all before:absolute before:bottom-0 before:left-0 before:top-0 before:z-0 before:h-full before:w-0 before:bg-red-500 before:transition-all before:duration-500 hover:text-white hover:shadow-red-500 hover:before:left-0 hover:before:w-full"><span class="relative z-10">Make an Enquiry</span></Button>
+                      <Button class="text-red color-ornage-600 hover:before:bg-redborder-red-500 relative text-[16px] h-[60px] w-[212px] overflow-hidden border border-red-500 bg-white px-3 text-red-500 shadow-2xl transition-all before:absolute before:bottom-0 before:left-0 before:top-0 before:z-0 before:h-full before:w-0 before:bg-red-500 before:transition-all before:duration-500 hover:text-white hover:shadow-red-500 hover:before:left-0 hover:before:w-full">
+                        <span class="relative z-10">Make an Enquiry</span>
+                      </Button>
                       <FaRegCirclePlay
                         size="4rem"
                         className="text-custom-orange border-zinc-100 shadow-4xl  rounded-full "
@@ -81,7 +92,7 @@ export default function SimpleSlider() {
                 <img
                   src={HouseImage}
                   alt="Slider-Pics"
-                 className="w-[724px] h-[546px]"
+                  className="w-[724px] h-[546px]"
                 />
               </div>
               <div className="p-8 mt-40">
@@ -106,8 +117,7 @@ export default function SimpleSlider() {
                       </p>
                     </div>
                     <div className="mt-4 flex  gap-3">
-                    <Button className="bg-custom-orange p-3 text-custom-orange text-lg text-red hover:before:bg-redborder-red-500 relative h-[60px] w-[213px] overflow-hidden border border-red-500 bg-white px-3  shadow-2xl transition-all before:absolute before:bottom-0 before:left-0 before:top-0 before:z-0 before:h-full before:w-0 before:bg-red-500 before:transition-all before:duration-500 hover:text-white hover:shadow-red-500 hover:before:left-0 hover:before:w-full">
-                        
+                      <Button className="bg-custom-orange p-3 text-custom-orange text-lg text-red hover:before:bg-redborder-red-500 relative h-[60px] w-[213px] overflow-hidden border border-red-500 bg-white px-3  shadow-2xl transition-all before:absolute before:bottom-0 before:left-0 before:top-0 before:z-0 before:h-full before:w-0 before:bg-red-500 before:transition-all before:duration-500 hover:text-white hover:shadow-red-500 hover:before:left-0 hover:before:w-full">
                         <span class="relative z-10">Make An Enquiry</span>
                       </Button>
                       <FaRegCirclePlay

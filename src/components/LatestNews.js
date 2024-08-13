@@ -7,7 +7,25 @@ import Button from "./Button";
 import { MdEco } from "react-icons/md";
 import House7 from "../pics/House7.jpg";
 import { SlCalender } from "react-icons/sl";
-import { NextArrow, PrevArrow } from "./ArrowComponent";
+
+import { TbCircleArrowLeftFilled } from "react-icons/tb";
+import { TbCircleArrowRightFilled } from "react-icons/tb";
+
+function NextArrow({currentSlide, slideCount, ...props }) {
+  return (
+    <TbCircleArrowLeftFilled {...props} color="darkcyan" />
+  );
+}
+
+function PrevArrow({ currentSlide, slideCount, ...props }) {
+  return (
+    <TbCircleArrowRightFilled
+      {...props}
+     color="darkcyan"
+    />
+  );
+}
+
 export default function FeaturedListing() {
   const DUMMY_EXPENSES = [
     {

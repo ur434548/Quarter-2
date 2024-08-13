@@ -12,7 +12,6 @@ import BuildingAminities from "./components/BuildingAminities";
 import ClientsFeeback from "./components/ClientsFeeback";
 import LatestNews from "./components/LatestNews";
 import Footer from "./components/Footer";
-import Example from "./components/Example"
 import "./App.css";
 function App() {
   return (
@@ -31,7 +30,7 @@ function App() {
       <ClientsFeeback />
       <LatestNews />
       <Footer/>
-      <Example/>
+      
     </div>
   );
 }
