@@ -2,7 +2,36 @@ import React from "react";
 import House1 from "../pics/House1.jpg";
 import { FcHome } from "react-icons/fc";
 import Button from "./Button";
+import Modal from "react-bootstrap/Modal";
+import "bootstrap/dist/css/bootstrap.min.css";
+import { FaRegCirclePlay } from "react-icons/fa6";
+import House3 from "../pics/House3.jpg";
+function MyVerticallyCenteredModal(props) {
+  return (
+    <Modal
+      {...props}
+      size="lg"
+      aria-labelledby="contained-modal-title-vcenter"
+      centered
+    >
+      <Modal.Header closeButton>
+        <Modal.Title id="contained-modal-title-vcenter">
+          Youtube Vedio
+        </Modal.Title>
+      </Modal.Header>
+      <Modal.Body>
+        <video width="750" height="500" controls autoPlay playsInline>
+          <source src="https://ik.imagekit.io/ikmedia/example_video.mp4" />
+        </video>
+      </Modal.Body>
+      <Modal.Footer>
+        <Button onClick={props.onHide}>Close</Button>
+      </Modal.Footer>
+    </Modal>
+  );
+}
 export default function TheLeadingRealEstate() {
+  const [modalShow, setModalShow] = React.useState(false);
   const leadingEstate = [
     {
       img: House1,
@@ -20,12 +49,33 @@ export default function TheLeadingRealEstate() {
   return (
     <div>
       {leadingEstate.map((items, index) => (
-        <div key={index} className="flex justify-center mt-20">
-          <img
-            src={items.img}
-            alt="Pics"
-            className="w-[550px] h-[650px] rounded-3xl p-3"
-          />
+        <div key={index} className="flex justify-center mt-60 relative">
+          <div className="shadow rounded">
+            <img
+              src={items.img}
+              alt="Pics"
+              className="w-[550px] h-[650px] rounded-3xl p-3"
+            />
+            <div
+      className="flex items-center justify-center bg-cover mt-[-250px] ml-[-30px] rounded shadow h-[223px] w-[300px] absolute"
+      style={{
+        backgroundImage: `url(${House3})`,
+      }}
+    >
+      <Button
+        variant="primary"
+        onClick={() => setModalShow(true)}
+        className="relative  p-3 rounded-full  text-white  animate-waterEffect"
+      >
+        <FaRegCirclePlay size="2rem" />
+      </Button>
+
+      <MyVerticallyCenteredModal
+        show={modalShow}
+        onHide={() => setModalShow(false)}
+      />
+    </div>
+          </div>
           <div className=" ml-20 p-1">
             <Button
               className="bg-red-50 p-2   w-[110px] h-[30px] rounded-full  text-custom-orange

@@ -4,16 +4,17 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import person from "../pics/person.jpg";
 import Button from "./Button";
-
-import { TbCircleArrowLeftFilled } from "react-icons/tb";
-import { TbCircleArrowRightFilled } from "react-icons/tb";
-
-function NextArrow({ currentSlide, slideCount, ...props }) {
-  return <TbCircleArrowLeftFilled {...props}  color="darkcyan"  />;
+import { FaArrowRight } from "react-icons/fa6";
+import { FaArrowLeft } from "react-icons/fa6";
+import "./arrows.css";
+function NextArrow({ currentSlide, slideCount, className, ...props }) {
+  return <FaArrowLeft {...props} className={`featureLeft ${className}`} />;
 }
 
-function PrevArrow({ currentSlide, slideCount, ...props }) {
-  return <TbCircleArrowRightFilled {...props}  color="darkcyan" />;
+function PrevArrow({ currentSlide, slideCount, className, ...props }) {
+  console.log(props);
+
+  return <FaArrowRight className={`featureRight  ${className}`} {...props} />;
 }
 
 export default function FeaturedListing() {
@@ -88,10 +89,10 @@ export default function FeaturedListing() {
   };
 
   return (
-    <div className="bg-slate-100 mt-40 h-[700px]">
+    <div className="bg-slate-100  mt-40 h-[700px]  slider-container">
       
-        <div className="flex flex-col items-center  mt-10">
-          <Button className="bg-red-100 p-2 w-60  mt-10 rounded-full text-center text-custom-orange mb-4">
+        <div className="flex flex-col items-center ">
+          <Button className="bg-red-100 p-2 w-60  mt-20 rounded-full text-center text-custom-orange mb-4">
             Our Testimonial
           </Button>
 
@@ -99,11 +100,11 @@ export default function FeaturedListing() {
             Clients Feedback
           </h1>
         </div>
-        <div className="mt-16 mx-60">
-          <Slider  {...settings}>
+        <div className="mt-16 mx-60 ">
+          <Slider  {...settings} className="w-[1400px] ">
             {DUMMY_EXPENSES.map((items) => (
-              <div key={items.id} className="mx-20" >
-                <div className="w-[370px] h-[361px] bg-white rounded-lg text-lg text-slate-600 shadow-neutral-900 p-16 ">
+              <div key={items.id} className="mx-20 shadow-xxl" >
+                <div className="w-[370px] h-[361px] bg-white rounded-lg text-lg text-slate-600  p-16 ">
                   <span className="text-[18px]">{items.description}</span>
                   <div className="flex gap-3 mt-12">
                     <img

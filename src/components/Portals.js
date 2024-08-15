@@ -43,9 +43,9 @@ export default function App() {
       <Button
         variant="primary"
         onClick={() => setModalShow(true)}
-        className="relative  p-3 rounded  text-white  animate-waterEffect"
+        className="relative  p-3 rounded-full  text-white  animate-waterEffect"
       >
-        <FaRegCirclePlay size="2rem" />
+        <FaRegCirclePlay size="3rem" />
       </Button>
 
       <MyVerticallyCenteredModal
