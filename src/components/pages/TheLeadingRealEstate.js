@@ -1,11 +1,11 @@
 import React from "react";
-import House1 from "../pics/House1.jpg";
+import House1 from "../../assests/images/House1.jpg";
 import { FcHome } from "react-icons/fc";
-import Button from "./Button";
+import Button from "../Button/Button";
 import Modal from "react-bootstrap/Modal";
 import "bootstrap/dist/css/bootstrap.min.css";
-import { FaRegCirclePlay } from "react-icons/fa6";
-import House3 from "../pics/House3.jpg";
+
+import House3 from "../../assests/images/House3.jpg";
 function MyVerticallyCenteredModal(props) {
   return (
     <Modal
@@ -50,45 +50,51 @@ export default function TheLeadingRealEstate() {
     <div>
       {leadingEstate.map((items, index) => (
         <div key={index} className="flex justify-center mt-60 relative">
-          <div className="shadow rounded">
+          <div className="shadow ">
             <img
               src={items.img}
               alt="Pics"
-              className="w-[550px] h-[650px] rounded-3xl p-3"
+              className="w-[550px] h-[650px]  p-3"
             />
             <div
-      className="flex items-center justify-center bg-cover mt-[-250px] ml-[-30px] rounded shadow h-[223px] w-[300px] absolute"
-      style={{
-        backgroundImage: `url(${House3})`,
-      }}
-    >
-      <Button
-        variant="primary"
-        onClick={() => setModalShow(true)}
-        className="relative  p-3 rounded-full  text-white  animate-waterEffect"
-      >
-        <FaRegCirclePlay size="2rem" />
-      </Button>
+              className="flex items-center justify-center bg-cover mt-[-250px] ml-[-30px] rounded shadow h-[223px] w-[300px] absolute"
+              style={{
+                backgroundImage: `url(${House3})`,
+              }}
+            >
+              <Button
+                variant="primary"
+                onClick={() => setModalShow(true)}
+                className="relative  p-2 rounded-full  text-white  animate-waterEffect"
+              >
+                <svg viewBox="0 0 24 24" fill="currentColor" class="size-20">
+                  <path
+                    fill-rule="evenodd"
+                    d="M2.25 12c0-5.385 4.365-9.75 9.75-9.75s9.75 4.365 9.75 9.75-4.365 9.75-9.75 9.75S2.25 17.385 2.25 12Zm14.024-.983a1.125 1.125 0 0 1 0 1.966l-5.603 3.113A1.125 1.125 0 0 1 9 15.113V8.887c0-.857.921-1.4 1.671-.983l5.603 3.113Z"
+                    clip-rule="evenodd"
+                  />
+                </svg>
+              </Button>
 
-      <MyVerticallyCenteredModal
-        show={modalShow}
-        onHide={() => setModalShow(false)}
-      />
-    </div>
+              <MyVerticallyCenteredModal
+                show={modalShow}
+                onHide={() => setModalShow(false)}
+              />
+            </div>
           </div>
-          <div className=" ml-20 p-1">
+          <div className=" ml-20  ">
             <Button
-              className="bg-red-50 p-2   w-[110px] h-[30px] rounded-full  text-custom-orange
+              className="bg-red-100 p-2  mb-[-15px] w-[110px] h-[30px] rounded-full  text-custom-orange
              "
             >
               About Us
             </Button>
-            <h1 className=" font-bold  w-[670px] text-gray-900 text-[44px]">
+            <h1 className=" font-bold font-sans w-[670px] text-gray-900 text-[44px]">
               {items.text1}
             </h1>
 
-            <p className="text-slate-600 mt-2 w-[500px]">{items.text2}</p>
-            <div className="flex gap-[9px]  mt-6 text-slate-600 text-base ">
+            <p className="text-slate-600  mt-10  w-[500px]">{items.text2}</p>
+            <div className="flex gap-[9px]  mt-12 items-center text-slate-600 text-base ">
               <span className="bg-red-100 w-12 h-12 p-2 rounded-full">
                 <FcHome size="2rem" />
               </span>
@@ -99,7 +105,7 @@ export default function TheLeadingRealEstate() {
               </span>
               {items.text4}
             </div>
-            <div className="flex  gap-[9px]  mt-10 text-slate-600 text-base">
+            <div className="flex  gap-[9px]  items-center mt-10 text-slate-600 text-base">
               <span className="bg-red-100 w-12 h-12 p-2 rounded-full">
                 <FcHome size="2rem" />
               </span>
@@ -110,12 +116,12 @@ export default function TheLeadingRealEstate() {
               </span>
               {items.text6}
             </div>
-            <div className=" text-slate-500 mt-5 w-[600px] mt-20 bg-orange-50 p-10 text-slate-500 text-base ">
+            <div className=" text-slate-500 mt-5 w-[600px] mt-20 bg-orange-50 p-7 text-slate-500 text-base ">
               {items.text7}
             </div>
-            <Button class="group relative min-h-[50px] w-[170px] mt-14 overflow-hidden border border-white bg-custom-orange text-white text-[16px] shadow-2xl transition-all before:absolute before:left-0 before:top-0 before:h-0 before:w-1/4 before:bg-black before:duration-500 after:absolute after:bottom-0 after:right-0 after:h-0 after:w-1/4 after:bg-black after:duration-500 hover:text-white hover:before:h-full hover:after:h-full">
-              <span class="top-0 flex h-full w-full items-center justify-center before:absolute before:bottom-0 before:left-1/4 before:z-0 before:h-0 before:w-1/4 before:bg-black before:duration-500 after:absolute after:right-1/4 after:top-0 after:z-0 after:h-0 after:w-1/4 after:bg-black after:duration-500 hover:text-white group-hover:before:h-full group-hover:after:h-full"></span>
-              <span class="absolute bottom-0 left-0 right-0 top-0 z-10 flex h-full w-full items-center justify-center group-hover:text-white">
+            <Button className="mt-16 text-white hover:border-black border-1 border-transparent font-bold  text-[16px] h-[50px] w-[170px] relative text-white bg-custom-orange px-4 py-2  overflow-hidden group ">
+              <span className="absolute inset-0 w-full h-full bg-white transform -translate-x-full transition-transform duration-300 group-hover:translate-x-0"></span>
+              <span className="relative z-10 transition-colors duration-300 group-hover:text-black">
                 Our Services
               </span>
             </Button>

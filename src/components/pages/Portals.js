@@ -3,7 +3,7 @@ import Button from "react-bootstrap/Button";
 import Modal from "react-bootstrap/Modal";
 import "bootstrap/dist/css/bootstrap.min.css";
 import { FaRegCirclePlay } from "react-icons/fa6";
-import House3 from "../pics/House3.jpg";
+import House3 from "../../assests/images/House3.jpg";
 
 function MyVerticallyCenteredModal(props) {
   return (

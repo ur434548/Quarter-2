@@ -2,19 +2,19 @@ import React from "react";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import person from "../pics/person.jpg";
-import Button from "./Button";
+import person from "../../assests/images/person.jpg";
+import Button from "../Button/Button";
 import { FaArrowRight } from "react-icons/fa6";
 import { FaArrowLeft } from "react-icons/fa6";
-import "./arrows.css";
+import "../../assests/styles/arrows.css";
 function NextArrow({ currentSlide, slideCount, className, ...props }) {
-  return <FaArrowLeft {...props} className={`featureLeft ${className}`} />;
+  return <FaArrowLeft {...props} className={`clientLeft ${className}`} />;
 }
 
 function PrevArrow({ currentSlide, slideCount, className, ...props }) {
-  console.log(props);
 
-  return <FaArrowRight className={`featureRight  ${className}`} {...props} />;
+
+  return <FaArrowRight className={`clientRight  ${className}`} {...props} />;
 }
 
 export default function FeaturedListing() {
@@ -96,7 +96,7 @@ export default function FeaturedListing() {
             Our Testimonial
           </Button>
 
-          <h1 className="text-3xl font-bold tracking-tight mb-10 text-center text-gray-900 sm:text-5xl">
+          <h1 className="text-3xl font-bold font-sans tracking-tight mb-10 text-center text-gray-900 sm:text-5xl">
             Clients Feedback
           </h1>
         </div>

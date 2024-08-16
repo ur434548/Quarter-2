@@ -7,9 +7,6 @@ module.exports = {
       colors: {
         "custom-orange": "#ff5a3c",
       },
-      fontWeight: {
-        "ultra-bold": "1250", // Example of a custom heavy weight
-      },
     },
   },
   plugins: [],

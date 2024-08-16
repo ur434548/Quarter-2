@@ -53,20 +53,19 @@
 }
 
 @keyframes swipeOut {
-    from {
-      transform: translateX(0);
-    }
-    to {
-      transform: translateX(-100%);
-    }
+  from {
+    transform: translateX(0);
   }
-
+  to {
+    transform: translateX(-100%);
+  }
+}
 
 /* Feature */
 .featureLeft {
   color: grey;
   border: 1px solid lightgray;
-  
+
   border-radius: 50%;
   width: 50px;
   height: 50px;
@@ -98,32 +97,159 @@
 }
 
 .slider-container:hover .featureLeft {
-    opacity: 1;
-    transform: translateX(0); /* Slide into view */
-    animation: swipeIn 0.5s ease-out forwards;
+  opacity: 1;
+  transform: translateX(0); /* Slide into view */
+  animation: swipeIn 0.5s ease-out forwards;
+}
+@keyframes swipeIn {
+  from {
+    transform: translateX(0);
   }
-  @keyframes swipeIn {
-    from {
-        transform: translateX(0);
-    }
-    to {
-        transform: translateX(-100%);
-    }
+  to {
+    transform: translateX(-100%);
   }
-  
-  .slider-container:hover .featureRight {
-    opacity: 1;
-    transform: translateX(0); /* Slide into view */
-    animation: swipeOut 0.5s ease-out forwards;
+}
+
+.slider-container:hover .featureRight {
+  opacity: 1;
+  transform: translateX(0); /* Slide into view */
+  animation: swipeOut 0.5s ease-out forwards;
+}
+
+@keyframes swipeOut {
+  from {
+    transform: translateX(-100%);
   }
-  
-  @keyframes swipeOut {
-      from {
-        transform: translateX(-100%);
-      }
-      to {
-        transform: translateX(0);
-      }
-    }
-  
-  
+  to {
+    transform: translateX(0);
+  }
+}
+
+/* Client Feedback */
+
+.clientLeft {
+  color: grey;
+  border: 1px solid lightgray;
+margin-left: 50px;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  padding: 15px;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+}
+.clientRight {
+  color: grey;
+  border: 1px solid lightgray;
+  margin-right: -45px;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  padding: 15px;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+}
+
+.clientLeft:hover {
+  color: white;
+  background-color: #ff5a3c;
+}
+.clientRight:hover {
+  color: white;
+  background-color: #ff5a3c;
+}
+
+.slider-container:hover .clientLeft {
+  opacity: 1;
+  transform: translateX(0); /* Slide into view */
+  animation: swipeIn 0.5s ease-out forwards;
+}
+@keyframes swipeIn {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}
+
+.slider-container:hover .clientRight {
+  opacity: 1;
+  transform: translateX(0); /* Slide into view */
+  animation: swipeOut 0.5s ease-out forwards;
+}
+
+@keyframes swipeOut {
+  from {
+    transform: translateX(-100%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+
+/* Latest News Feed */
+.newsLeft {
+  color: grey;
+  border: 1px solid lightgray;
+
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  padding: 15px;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+}
+.newsRight {
+  color: grey;
+  border: 1px solid lightgray;
+  margin-right: -35px;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  padding: 15px;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+}
+
+.newsLeft:hover {
+  color: white;
+  background-color: #ff5a3c;
+}
+.newsRight:hover {
+  color: white;
+  background-color: #ff5a3c;
+}
+
+.slider-container:hover .newsLeft {
+  opacity: 1;
+  transform: translateX(0); /* Slide into view */
+  animation: swipeIn 0.5s ease-out forwards;
+}
+@keyframes swipeIn {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}
+
+.slider-container:hover .newsRight {
+  opacity: 1;
+  transform: translateX(0); /* Slide into view */
+  animation: swipeOut 0.5s ease-out forwards;
+}
+
+@keyframes swipeOut {
+  from {
+    transform: translateX(-100%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}

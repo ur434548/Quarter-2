@@ -1,17 +1,17 @@
-import Header from "./components/Header";
-import Navigation from "./components/Navigation";
-import Slider from "./components/Slider";
-import TheLeadingRealEstate from "./components/TheLeadingRealEstate";
-import Counters from "./components/Counters";
-import TodaySellProperties from "./components/TodaySellProperties";
-import Cards from "./components/Cards";
-import FeaturedListing from "./components/FeaturedListing";
-import ApartmentsPlan from "./components/ApartmentsPlan";
-import Portals from "./components/Portals";
-import BuildingAminities from "./components/BuildingAminities";
-import ClientsFeeback from "./components/ClientsFeeback";
-import LatestNews from "./components/LatestNews";
-import Footer from "./components/Footer";
+import Header from "../src/components/Header/Header"
+import Navigation from "../src/components/pages/Navigation"
+import Slider from "../src/components/pages/Slider"
+import TheLeadingRealEstate from "../src/components/pages/TheLeadingRealEstate"
+import Counters from "../src/components/pages/Counters"
+import TodaySellProperties from "../src/components/pages/TodaySellProperties"
+import Cards from "../src/components/Cards/Cards"
+import FeaturedListing from "../src/components/pages/FeaturedListing"
+import ApartmentsPlan from "../src/components/pages/ApartmentsPlan"
+import Portals from "../src/components/pages/Portals"
+import BuildingAminities from "../src/components/pages/BuildingAminities"
+import ClientsFeeback from "../src/components/pages/ClientsFeeback"
+import LatestNews from "../src/components/pages/LatestNews"
+import Footer from "../src/components/pages/Footer"
 import "./App.css";
 function App() {
   return (

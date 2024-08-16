@@ -1,6 +1,6 @@
 import React from "react";
-import "./custom.css";
-import payment from "../pics/payment.png";
+import "../../assests/styles/custom.css";
+import payment from "../../assests/images/payment.png";
 import { FaHome } from "react-icons/fa";
 import { MdOutlinePhoneForwarded } from "react-icons/md";
 import { MdOutlineEmail } from "react-icons/md";
@@ -9,7 +9,7 @@ import { FaTwitter } from "react-icons/fa";
 import { FaLinkedin } from "react-icons/fa";
 import { FaYoutube } from "react-icons/fa";
 import { FaLongArrowAltRight } from "react-icons/fa";
-import Button from "../components/Button";
+import Button from "../Button/Button";
 
 import { CiLocationOn } from "react-icons/ci";
 export default function Footer() {

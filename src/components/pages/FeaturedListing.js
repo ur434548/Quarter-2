@@ -5,27 +5,26 @@ import "slick-carousel/slick/slick-theme.css";
 import { TiArrowMinimise } from "react-icons/ti";
 import { BsHeart } from "react-icons/bs";
 import { CiCirclePlus } from "react-icons/ci";
-
-import House2 from "../pics/House2.jpg";
-import House3 from "../pics/House3.jpg";
-import House4 from "../pics/House4.jpg";
-import Button from "./Button";
-import House6 from "../pics/House6.jpg";
-import House7 from "../pics/House7.jpg";
-import person from "../pics/person.jpg";
+import House2 from "../../assests/images/House2.jpg";
+import House3 from "../../assests/images/House3.jpg";
+import House4 from "../../assests/images/House4.jpg";
+import House6 from "../../assests/images/House6.jpg";
+import House7 from "../../assests/images/House7.jpg";
+import Button from "../Button/Button";
+import person from "../../assests/images/person.jpg";
 import { MdOutlineBedroomChild } from "react-icons/md";
 import { MdOutlineBathroom } from "react-icons/md";
 import { IoCarSportOutline } from "react-icons/io5";
 import { FaRegSquare } from "react-icons/fa";
 import { FaArrowRight } from "react-icons/fa6";
 import { FaArrowLeft } from "react-icons/fa6";
-import "./arrows.css";
+import "../../assests/styles/arrows.css";
 function NextArrow({ currentSlide, slideCount, className, ...props }) {
   return <FaArrowLeft {...props} className={`featureLeft  ${className}`} />;
 }
 
 function PrevArrow({ currentSlide, slideCount, className, ...props }) {
-  console.log(props);
+ 
 
   return <FaArrowRight className={`featureRight ${className}`} {...props} />;
 }
@@ -129,7 +128,7 @@ export default function FeaturedListing() {
     speed: 500,
     slidesToShow: 4,
     slidesToScroll: 1,
-    dots:true,
+    dots: true,
     nextArrow: <PrevArrow />,
 
     prevArrow: <NextArrow />,
@@ -142,7 +141,7 @@ export default function FeaturedListing() {
           <Button className="bg-red-100  text-[16px] p-2  rounded-full text-custom-orange w-[155px] h-[30px] mb-4">
             Properties
           </Button>
-          <h1 className=" font-bold tracking-tight mb-3 text-center text-gray-900 text-[44px]">
+          <h1 className=" font-bold font-sans tracking-tight mb-3 text-center text-gray-900 text-[44px]">
             Featured Listing
           </h1>
         </div>
@@ -186,7 +185,7 @@ export default function FeaturedListing() {
                       <span>{items.text4}</span>
                     </div>
                   </div>
-                <hr/>
+                  <hr />
                   <div className="flex items-center pl-8 pr-8 mt-10">
                     <img
                       className="w-[40px] h-[40px] rounded-full mr-4"

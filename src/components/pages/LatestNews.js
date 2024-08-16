@@ -3,22 +3,22 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import { RiAdminLine } from "react-icons/ri";
-import Button from "./Button";
+import Button from "../Button/Button";
 import { MdEco } from "react-icons/md";
-import House7 from "../pics/House7.jpg";
+import House7 from "../../assests/images/House7.jpg";
 import { SlCalender } from "react-icons/sl";
 
 import { FaArrowRight } from "react-icons/fa6";
 import { FaArrowLeft } from "react-icons/fa6";
-import "./arrows.css";
+import "../../assests/styles/arrows.css";
 function NextArrow({ currentSlide, slideCount, className, ...props }) {
-  return <FaArrowLeft {...props} className={`featureLeft  ${className}`} />;
+  return <FaArrowLeft {...props} className={`newsLeft  ${className}`} />;
 }
 
 function PrevArrow({ currentSlide, slideCount, className, ...props }) {
-  console.log(props);
+  
 
-  return <FaArrowRight className={`featureRight  ${className}`} {...props} />;
+  return <FaArrowRight className={`newsRight  ${className}`} {...props} />;
 }
 export default function FeaturedListing() {
   const DUMMY_EXPENSES = [
@@ -103,7 +103,7 @@ export default function FeaturedListing() {
           <Button className="bg-red-100 p-2 w-[145px] h-[30px]  mt-10 rounded-full text-center text-custom-orange mb-4">
             News & Blogs
           </Button>
-          <h1 className="text-[44px] font-bold tracking-tight mb-10 text-center text-gray-900 ">
+          <h1 className="text-[44px] font-bold font-sans tracking-tight mb-10 text-center text-gray-900 ">
             Latest News Feeds
           </h1>
         </div>

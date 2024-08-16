@@ -1,5 +1,5 @@
 import React from "react";
-import Button from "../components/Button";
+import Button from "../Button/Button";
 
 import CardComponent from "./CardComponent";
 const posts = [
@@ -37,7 +37,7 @@ export default function Cards() {
           <Button className="bg-red-100  text-[16px] p-2  rounded-full text-custom-orange w-[140px] h-[30px] ">
             Our Services
           </Button>
-          <h1 className="text-3xl font-900 tracking-tight text-gray-900 text-[44px]">
+          <h1 className="text-3xl font-700 font-sans tracking-tight text-gray-900 text-[44px]">
             Our Main Focus
           </h1>
         </div>

@@ -1,9 +1,9 @@
 import React from "react";
-import Aprtments from "../pics/Aprtments.png";
+import Aprtments from "../../assests/images/Aprtments.png";
 import Container from "react-bootstrap/Container";
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
-import Button from "./Button"
+import Button from "../Button/Button"
 export default function ApartmentsPlan() {
   const ApartmentsPlan = [
     {
@@ -25,7 +25,7 @@ export default function ApartmentsPlan() {
           <Button className="bg-red-100 p-2 w-[170px] h-[30px] mt-10 rounded-full text-center text-custom-orange mb-4">
             Apartments Sktech
           </Button>
-          <h1 className="3xl font-bold tracking-tight  text-center text-gray-900 text-[44px]">
+          <h1 className="3xl font-bold font-sans tracking-tight  text-center text-gray-900 text-[44px]">
             Apartments Plan
           </h1>
         </div>
@@ -43,12 +43,12 @@ export default function ApartmentsPlan() {
           </Navbar>
         </div>
     <div>
-        {ApartmentsPlan.map((items) => (
+        {ApartmentsPlan.map((items,index) => (
           //parent div
-          <div className="flex w-[1200px] mx-auto justify-center   p-4">
+          <div key={index} className="flex w-[1200px] mx-auto justify-center   p-4">
             <div className="bg-custom-orange w-2/4 p-20 w-[600px] h-[550px]">
               <div className="flex flex-col gap-5">
-                <div className="text-[30px] text-white  font-bold">
+                <div  className="text-[30px] text-white  font-bold">
                   {items.text2}
                 </div>
                   <div className="text-white text-lg">{items.text3}</div>
