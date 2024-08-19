@@ -1,5 +1,5 @@
 import React from "react";
-import "../../assests/styles/custom.css";
+
 import payment from "../../assests/images/payment.png";
 import { FaHome } from "react-icons/fa";
 import { MdOutlinePhoneForwarded } from "react-icons/md";
@@ -8,7 +8,7 @@ import { FaFacebook } from "react-icons/fa";
 import { FaTwitter } from "react-icons/fa";
 import { FaLinkedin } from "react-icons/fa";
 import { FaYoutube } from "react-icons/fa";
-import { FaLongArrowAltRight } from "react-icons/fa";
+import { HiArrowLongRight } from "react-icons/hi2";
 import Button from "../Button/Button";
 
 import { CiLocationOn } from "react-icons/ci";
@@ -77,7 +77,7 @@ export default function Footer() {
 
   return (
     <div className="relative  bg-slate-900 mt-10">
-      <div className="flex justify-between absolute inset-0 items-center bg-custom-orange h-[190px] w-[1170px] p-[50px] transform -translate-x-1/2 -translate-y-1/2 left-1/2 top-[-30px] ">
+      <div className="flex justify-between absolute inset-0 items-center bg-custom-orange h-[150px] w-[1170px] p-[50px] transform -translate-x-1/2 -translate-y-1/2 left-1/2 top-[-30px] ">
         <div className="text-white text-right">
           <h1 className="text-4xl font-bold">Looking for a dream home</h1>
           <p className="mt-2 text-lg">
@@ -85,9 +85,12 @@ export default function Footer() {
           </p>
         </div>
         <div className="flex items-center">
-          <Button className="relative flex flex gap-2 h-[60px] w-[242px] text-[16px] items-center justify-center overflow-hidden bg-gray-800 text-white shadow-2xl transition-all before:absolute before:h-0 before:w-0 before:rounded-full before:bg-orange-600 before:duration-500 before:ease-out hover:shadow-orange-600 hover:before:h-56 hover:before:w-72">
-            <span className="relative z-10">Explore Items</span>
-            <FaLongArrowAltRight size="2rem"  className="hover:text-orange-100" />
+          <Button className="  text-[16px] h-[60px] w-[212px] relative text-black bg-white px-4 py-2  overflow-hidden group ">
+            <span className="absolute inset-0 w-full h-full bg-black transform -translate-x-full transition-transform duration-300 group-hover:translate-x-0"></span>
+            <span className="relative z-10 transition-colors duration-300 group-hover:text-white flex items-center gap-1">
+              Explore Properties <HiArrowLongRight 
+              size={25}/>
+            </span>
           </Button>
         </div>
       </div>

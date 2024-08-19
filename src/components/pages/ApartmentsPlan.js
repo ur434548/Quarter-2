@@ -10,11 +10,11 @@ export default function ApartmentsPlan() {
       text2: "Double Height",
       text3:
         "Enimad minim veniam quis nostrud exercitation ullamco laboris. Lorem ipsum dolor sit amet cons aetetur adipisicing elit sedo eiusmod tempor.Incididunt labore et dolore magna aliqua. sed ayd minim veniam.",
-      text4: "Total Area ---------------------------------2800 Sq. Ft",
-      text5: "Bedroom--------------------------------- 150 Sq. Ft",
-      text6: "Bathroom--------------------------------- 45 Sq. Ft",
-      text7: "Balcony/Pets---------------------------------  Allowed",
-      text8: "Lounge--------------------------------- 650 Sq. Ft",
+      text4: "Total Area ---------------------------------------2800 Sq. Ft",
+      text5: "Bedroom------------------------------------------- 150 Sq. Ft",
+      text6: "Bathroom------------------------------------------ 45 Sq. Ft",
+      text7: "Balcony/Pets--------------------------------------- Allowed",
+      text8: "Lounge-------------------------------------------- 650 Sq. Ft",
       img: Aprtments,
     },
   ];
@@ -22,7 +22,7 @@ export default function ApartmentsPlan() {
   return (
       <div className="mt-20">
         <div className="flex flex-col items-center  mx-auto my-10">
-          <Button className="bg-red-100 p-2 w-[170px] h-[30px] mt-10 rounded-full text-center text-custom-orange mb-4">
+          <Button className="bg-red-100 p-2 w-[170px] h-[30px] mt-10 rounded-full text-center text-custom-orange ">
             Apartments Sktech
           </Button>
           <h1 className="3xl font-bold font-sans tracking-tight  text-center text-gray-900 text-[44px]">
@@ -46,13 +46,13 @@ export default function ApartmentsPlan() {
         {ApartmentsPlan.map((items,index) => (
           //parent div
           <div key={index} className="flex w-[1200px] mx-auto justify-center   p-4">
-            <div className="bg-custom-orange w-2/4 p-20 w-[600px] h-[550px]">
+            <div className="bg-custom-orange  p-20 w-[570px] h-[533px]">
               <div className="flex flex-col gap-5">
-                <div  className="text-[30px] text-white  font-bold">
+                <div  className="text-[30px] font-sans text-white  font-bold">
                   {items.text2}
                 </div>
                   <div className="text-white text-lg">{items.text3}</div>
-                <div className="text-white text-lg flex  flex-col ">
+                <div className="text-white text-lg flex gap-3  font-bold flex-col ">
                   <div>{items.text4}</div>
                   <div>{items.text5}</div>
                   <div>{items.text6}</div>

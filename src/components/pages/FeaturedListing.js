@@ -24,8 +24,6 @@ function NextArrow({ currentSlide, slideCount, className, ...props }) {
 }
 
 function PrevArrow({ currentSlide, slideCount, className, ...props }) {
- 
-
   return <FaArrowRight className={`featureRight ${className}`} {...props} />;
 }
 
@@ -148,8 +146,8 @@ export default function FeaturedListing() {
 
         <Slider {...settings}>
           {DUMMY_EXPENSES.map((items) => (
-            <div key={items.id} className="p-2">
-              <div className="w-[400px] h-[600px]   rounded-lg   flex flex-col">
+            <div key={items.id} className="pl-6">
+              <div className="w-[378px] h-[600px]   rounded-lg   flex flex-col">
                 <div className="w-full">
                   <img
                     src={items.img}
@@ -157,36 +155,35 @@ export default function FeaturedListing() {
                     className="w-full h-[250px] object-cover"
                   />
                 </div>
-                <div className="shadow h-[330px]">
-                  <div className="m-3 p-6 ">
-                    <div className="text-xl text-orange-700 font-bold">
+                <div className="shadow  h-[330px]">
+                  <div className="m-3 p-6  ">
+                    <div className="text-xl text-custom-orange font-bold">
                       {items.price}
                     </div>
-                    <div className="text-lg font-bold">{items.title}</div>
-                    <div className="text-base text-gray-600">
+                    <div className="text-2xl mt-3 font-sans font-[700]">
+                      {items.title}
+                    </div>
+                    <div className="text-base mt-2 text-slate-500">
                       {items.description}
                     </div>
                   </div>
-                  <div className="flex gap-3 w-full mt-2 pl-8 text-slate-600 cursor-pointer">
-                    <div className="flex flex-col items-center">
+                  <div className="flex gap-4    justify-center text-slate-500 cursor-pointer">
+                    <div className="flex flex-col border-r-[1px] pr-3 border-slate-300 ">
                       <MdOutlineBedroomChild />
                       <span>{items.text1}</span>
                     </div>
-                    <div className="flex flex-col items-center">
+                    <div className="flex flex-col border-r-[1px] pr-3 border-slate-300">
                       <MdOutlineBathroom />
                       <span>{items.text2}</span>
                     </div>
-                    <div className="flex flex-col items-center">
+                    <div className="flex flex-col border-r-[1px] pr-3 border-slate-300 r">
                       <IoCarSportOutline />
                       <span>{items.text3}</span>
                     </div>
-                    <div className="flex flex-col items-center">
-                      <FaRegSquare />
-                      <span>{items.text4}</span>
-                    </div>
+            
                   </div>
                   <hr />
-                  <div className="flex items-center pl-8 pr-8 mt-10">
+                  <div className="flex items-center text-slate-500 pl-8 pr-8 mt-7">
                     <img
                       className="w-[40px] h-[40px] rounded-full mr-4"
                       src={items.img2}
@@ -194,7 +191,7 @@ export default function FeaturedListing() {
                     />
                     <div className="flex flex-col flex-grow">
                       <b>{items.name}</b>
-                      <p>{items.text5}</p>
+                      <span>{items.text5}</span>
                     </div>
                     <div className="flex gap-2">
                       <div className="bg-slate-100 p-2 hover:bg-custom-orange hover:text-white rounded">

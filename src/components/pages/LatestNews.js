@@ -100,7 +100,7 @@ export default function FeaturedListing() {
     <div className=" slider-container mb-20">
       
         <div className="flex flex-col items-center mx-auto mt-10">
-          <Button className="bg-red-100 p-2 w-[145px] h-[30px]  mt-10 rounded-full text-center text-custom-orange mb-4">
+          <Button className="bg-red-100 p-2 w-[145px] h-[30px]  mt-10 rounded-full text-center text-custom-orange ">
             News & Blogs
           </Button>
           <h1 className="text-[44px] font-bold font-sans tracking-tight mb-10 text-center text-gray-900 ">

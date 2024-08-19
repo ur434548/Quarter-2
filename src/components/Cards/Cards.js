@@ -1,6 +1,7 @@
 import React from "react";
 import Button from "../Button/Button";
 
+
 import CardComponent from "./CardComponent";
 const posts = [
   {
@@ -9,7 +10,7 @@ const posts = [
     href: "#",
     description:
       "Illo sint voluptas. Error voluptates culpa eligendi. Hic vel totam vitae illo. Non aliquid explicabo necessitatibus unde. Sed exercitationem placeat consectetur nulla deserunt vel.",
-      footer:"Find A Home -->"
+      footer:"Find A Home "
   },
   {
     id: 2,
@@ -17,7 +18,7 @@ const posts = [
     href: "#",
     description:
       "Illo sint voluptas. Error voluptates culpa eligendi. Hic vel totam vitae illo. Non aliquid explicabo necessitatibus unde. Sed exercitationem placeat consectetur nulla deserunt vel.",
-      footer:"Find A Home -->"
+      footer:"Find A Home "
   },
   {
     id: 3,
@@ -25,7 +26,7 @@ const posts = [
     href: "#",
     description:
       "Illo sint voluptas. Error voluptates culpa eligendi. Hic vel totam vitae illo. Non aliquid explicabo necessitatibus unde. Sed exercitationem placeat consectetur nulla deserunt vel. ",
-      footer:"Find A Home  -->"
+      footer:"Find A Home  "
   },
 ];
 

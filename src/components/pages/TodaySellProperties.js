@@ -69,33 +69,33 @@ export default function TodaySellProperties() {
               </div>
             </div>
             {/* bedrooom Div */}
-            <div className="flex gap-5 mb-8 text-slate-500 text-[14px] p-2 cursor-pointer">
-              <div className="flex flex-col gap-3">
-              <div  className="flex  gap-2 items-center">
-              <span>3</span>
-              <MdOutlineBedroomChild />
-              </div>
+            <div className="flex gap-4 mb-8 text-slate-500 text-[14px]  cursor-pointer">
+              <div className="flex flex-col gap-2 border-r-[1px] pr-3 border-slate-300">
+                <div className="flex  gap-2 items-center ">
+                  <span>3</span>
+                  <MdOutlineBedroomChild />
+                </div>
                 {items.text7}
               </div>
-              <div className="flex flex-col gap-3">
-              <div  className="flex  gap-2 items-center">
-              <span>2</span>
-              <MdOutlineBathroom />
+              <div className="flex flex-col gap-2  border-r-[1px]  pr-3 border-slate-300">
+                <div className="flex  gap-2 items-center">
+                  <span>2</span>
+                  <MdOutlineBathroom />
+                </div>
+                {items.text8}
               </div>
-                {items.text7}
+              <div className="flex flex-col gap-2 border-r-[1px] pr-3 border-slate-300">
+                <div className="flex  gap-1 items-center">
+                  <span>2</span>
+                  <IoCarSportOutline />
+                </div>
+                {items.text9}
               </div>
-              <div className="flex flex-col gap-3">
-              <div  className="flex  gap-2 items-center">
-              <span>2</span>
-              <IoCarSportOutline />
-              </div>
-                {items.text7}
-              </div>
-              <div className="flex flex-col gap-3">
-              <div  className="flex  gap-2 items-center">
-              <span>3450</span>
-              <FaRegSquare />
-              </div>
+              <div className="flex flex-col gap-2  border-r-[1px] pr-3  border-slate-300">
+                <div className="flex  gap-2 items-center">
+                  <span>3450</span>
+                  <FaRegSquare />
+                </div>
                 {items.text7}
               </div>
             </div>

@@ -8,7 +8,7 @@ import { FaLocationDot } from "react-icons/fa6";
 
 export default function InfoNavbar() {
   return (
-    <div className="bg-cyan-950 h-[41px] flex items-center g justify-center">
+    <div className="bg-cyan-950 h-[41px] flex items-center g justify-center ">
   <div className="flex justify-between items-center w-full px-4 max-w-screen-lg">
     <div className="flex items-center gap-4">
       <div className="flex items-center gap-2">
